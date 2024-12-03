@@ -1,9 +1,7 @@
 # PowerShell script to remove ZoomInfoCEUtility
 
-# Define the application name
 $applicationName = "ZoomInfoCEUtility"
 
-# Function to uninstall application
 Function Uninstall-Application {
     param(
         [string]$appName
@@ -50,5 +48,5 @@ Function Uninstall-Application {
     }
 }
 
-# Execute the uninstall function
+# execute the uninstall function
 Uninstall-Application -appName $applicationName
