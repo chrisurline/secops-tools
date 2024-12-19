@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-LOG_DIR="/var/log/demisto/contaienr-logs" # where to save logfiles
+LOG_DIR="/var/log/demisto/container-logs" # where to save logfiles
 mkdir -p "$LOG_DIR"
 
 # get all container IDs
