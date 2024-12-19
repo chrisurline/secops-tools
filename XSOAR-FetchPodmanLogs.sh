@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#! /usr/bin/bash
 
 LOG_DIR="/var/log/demisto/container-logs" # where to save logfiles
 mkdir -p "$LOG_DIR"
