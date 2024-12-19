@@ -9,10 +9,10 @@ CONTAINERS=$(podman ps -a -q)
 TIMESTAMP=$(date +"%Y%m%d-%H%M%S")
 
 for CONTAINER_ID in $CONTAINERS; do
-    # get container name for logfile name
+    # use container name for logfile name if possible
     CONTAINER_NAME=$(podman inspect -f '{{.Name}}' "$CONTAINER_ID" | sed 's/^\/\(.*\)/\1/')
 
-    # if container name = empty use container id
+    # if container name = empty, use container id
     if [[ -z "$CONTAINER_NAME" ]]; then
         FILENAME="container_${CONTAINER_ID}_${TIMESTAMP}.log"
     else
