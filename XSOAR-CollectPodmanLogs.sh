@@ -24,3 +24,9 @@ for CONTAINER_ID in $CONTAINERS; do
 
     echo "Logs for container $CONTAINER_ID ($CONTAINER_NAME) saved to ${LOG_DIR}/${FILENAME}"
 done
+
+# zip up the log files
+ARCHIVE_NAME="demisto_podman-logs_${TIMESTAMP}.tar.gz"
+tar -cvzf "${ARCHIVE_NAME}" -C "${LOG_DIR}" .
+
+echo "Logs have been archived into ${ARCHIVE_NAME}"
