@@ -8,7 +8,6 @@ import os
 # step 2 takes the scripts we identified here and adds the new version to csv tracking sheet
 
 # xsoar api config
-# the variables below will work but you should replace them with a more secure alternative - env variables at minimum :)
 XSOAR_BASE_URL = os.environ.get("DEMISTO_BASE_URL") # example: "https://xsoar-instance.xyz"
 XSOAR_API_KEY = os.environ.get("DEMISTO_API_KEY") # your xsoar api key  
 XSOAR_HEADERS = {
