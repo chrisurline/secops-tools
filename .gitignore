@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/powershell,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=powershell,python
 
+*.json
+
 ### PowerShell ###
 # Exclude packaged modules
 *.zip
